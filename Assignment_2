@@ -1,0 +1,13 @@
+QUESTION 1
+
+The out put of the code will be undefined.Because the length of clothes is assigned with zero before printing it.
+
+QUESTION 2
+
+var arr=[5,8,3,15,12,17];
+var sum=0;
+for(var n=0;n<=5;n++)
+{
+    sum+=arr[n];
+}
+console.log("sum of elements of given array=",sum);
