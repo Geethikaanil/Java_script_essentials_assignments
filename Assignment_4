@@ -1,0 +1,34 @@
+QUESTION 1
+
+There are many different ways to access elements in the DOM. They are listed below
+1> getElementById() :It is the easiest way to access a single element in DOM. It access element by it's unique ID. In order to access by Id,the HTML element must have an id attribute.
+2> getElementByClassName() :The class attribute is used to access one or more specific elements in the DOM. We can get all the elements with a given class name with this method.
+3> getElementByTagName() :A less specific way to access multiple elements on the page would be by its HTML tag name.It return an array-like object of elements.,and can modify every tag in the document with a for loop.
+
+QUESTION 2
+
+HTML file:
+
+<html lang="en">
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <script src="five.js"></script>
+        Enter First number:<input id="a">
+        Enter Second number:<input id="b">
+        <button onclick="add()">Add</button>
+        <input id="answer">
+    </body>
+</html>
+
+JS file:
+
+function add()
+{
+    var a,b,c;
+    a=Number(document.getElementById("a").value);
+    b=Number(document.getElementById("b").value);
+    c=a+b;
+    document.getElementById("answer").value=c;
+}
